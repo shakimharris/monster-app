@@ -20,7 +20,7 @@ class App extends Component {
 render() {
   return (
     <div className="App">
-      <input type="search" placeholder="Search" onChange={e => console.log(e)} />
+      <input type="search" placeholder="Search" onChange={e => console.log(e.target.value)} />
       <CardList monster={this.state.monster}>
       </CardList>
   </div> 
