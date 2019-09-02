@@ -5,7 +5,7 @@ return (
 <input 
     className="search-box"
     type="search" 
-    handleChange="Search" 
+    placeholder={placeholder} 
     handleChange={e => {
     this.setState({ searchField: e.target.value }
     }}
