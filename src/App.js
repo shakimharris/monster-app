@@ -18,6 +18,7 @@ class App extends Component {
   }
 
 render() {
+  const { monster, searchField } = this.state;
   return (
     <div className="App">
       <input type="search" placeholder="Search" onChange={e => {
