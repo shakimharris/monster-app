@@ -26,6 +26,10 @@ render() {
 
   return (
     <div className="App">
+    <SearchBox 
+    placeholder="Search users"
+    handleChange={e => {
+      this.setState({ searchField: e.target.value }/>
       <CardList monsters={filteredMonster}>
       </CardList>
   </div> 
