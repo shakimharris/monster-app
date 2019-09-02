@@ -19,6 +19,10 @@ class App extends Component {
 
 render() {
   const { monster, searchField } = this.state;
+  const filteredMonster = monster.filter(monster => 
+    monster.name.toLowerCase()).includes(searchField.toLowerCase()
+  )
+
   return (
     <div className="App">
       <input type="search" placeholder="Search" onChange={e => {
@@ -26,7 +30,7 @@ render() {
         console.log(this.state)
       );
       }} />
-      <CardList monster={this.state.monster}>
+      <CardList monster={filteredMonster}>
       </CardList>
   </div> 
   ); 
